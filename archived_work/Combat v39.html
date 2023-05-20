@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>normalProject - Combat v39</title>
+    <link rel="stylesheet" href="static/style.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  </head>
+  <body>
+    <div class="wiki" id="content_view" style="display: block;">
+Hi guys,<br />
+<br />
+yes, I've been pondering combat more. I really want the system to function exactly the way we intend; many systems start with high hopes but end up doing, in practice, something other than what the RPG designers really wanted.<br />
+<br />
+I'm going to present a slightly modified combat system and see what y'all think. It's more complicated than we've talked about so far, but I'm hoping you'll agree it is more juicy tactically.<br />
+<br />
+Bryan, would love comments from yourself.. I know Simon and I both value your input, given that your experience in these games is so much deeper than ours.<br />
+<br />
+I have a few goals for this system:<br />
+<ul><li>ultimately, allow players to &quot;act on the world&quot;, ie beat the crap out of it</li><li>not allow them to beat the crap out of the world without a decent fight</li><li>put some tactics in the system, ie make them have to think about who's where, fighting what, on the combat field</li><li>provide a combat system that, despite the tactics, is still fairly straight-forward without becoming vanilla</li><li>cheat realism somewhat on the health system. Combat will be no fun if the characters are off their feet for a month after every single brawl</li></ul><br />
+<br />
+<br />
+Modified Health System<br />
+<ul><li>four bars:<ol><li>Critical - when depleted, the character physically functions at -50% efficiency. Points regenerate at 1/week.</li><li>Serious - when depleted, the character physically functions at -20% efficiency. Points regenerate at 1/day if and only if their Critical bar is at least half full, rounded down.</li><li>Light - when depleted, the character physically functions at -10% efficiency. Points regenerate at 1/hour or six hours comfortable sleep (regardless of Crit points).</li><li>Surface - no effect when depleted. At the end of any given fround of combat, this bar fully regenerates unless all other health bars are empty.</li></ol></li><li>the healing rates are simultaneous; if the Critical bar &gt;= half, then seven good night's rest will heal one Critical, seven Serious, all Light and all Surface.</li><li>a character is not dead unless all health bars are empty.</li><li>effects are cumulative, so a character functions at only 30% efficiency if both his &quot;Critical&quot; and &quot;Serious&quot; health bars are empty.</li></ul><br />
+In summary, the Light and Surface bars act like a shield against worse, crippling damage. They also come back the fastest, allowing a character some hope for getting to safety even after a bad battle. Note that death doesn't happen when the &quot;Critical&quot; bar hits zero.<br />
+<br />
+<br />
+<br />
+<br />
+Modified Weapon Effects: weapons still do the same *amount* of damage, but I'd like to remove their damage category. Thus, a dagger now does 1 damage, not 1 light damage (necessarily). Similarly, a two-handed greatsword does not automatically do 2C + 1S + 1L, instead it does 4 generic damage. See below for details.<br />
+<br />
+<br />
+<br />
+<br />
+<h2 id="toc0"><a name="x-New System - Combat Advantage"></a>New System - Combat Advantage</h2>
+ <br />
+DESCRIPTION: This system represents how well a character is taking advantage of opportunities to hit while minimizing his own vulnerabilities during combat.<br />
+<br />
+EFFECT: By gaining advantage, a character can upgrade the damage caused by his weapon (but not the amount of damage). For example, a dagger wielded by a skilled fighter can regularly deal 1 Critical damage against his lesser-skilled enemy (or 1 point of the deepest available bar). This means that the fighter will much more quickly bring his enemy to 50% functionality, and seriously<br />
+increase his chances of winning.<br />
+<br />
+On the other side of the coin, a character who is seriously outmatched will be unable to maintain any combat advantage. Most of his attacks will cause damage that is downgraded to the &quot;Surface&quot; bar, and will therefore disappear by next round.<br />
+<br />
+ADVANTAGE LEVELS: The levels of advantage available to a character is equal to 3+Damage, where Damage is the amount of damage caused by the weapon being wielded by the character. A dagger has 4 advantage levels, while a two-handed greatsword has 7 advantage levels. The levels are simply a tug-of-war between the highest and lowest health bar levels. For example, the two-handed greatsword's 7 levels are:<br />
+<ol><li>4 Critical (best advantage for greatsword wielder)</li><li>3 Critical / 1 Serious</li><li>2 Critical / 1 Serious / 1 Light</li><li>1 Critical / 1 Serious / 1 Light / 1 Surface</li><li>1 Serious / 1 Light / 2 Surface</li><li>1 Light / 3 Surface</li><li>4 Surface (best advantage for defender)</li></ol><br />
+<br />
+CHANGING YOUR ADVANTAGE LEVEL: The advantage levels are considered to be at the &quot;Light&quot; level if both fighters are aware and engaged. Two perfectly matched fighters spend most of their time dealing damage beginning at the &quot;Light&quot; level. Methods to increase your advantage include -<br />
+<ul><li>Successfully damaging your opponent (even if the damage is &quot;Surface&quot;). This also decreases your opponent's advantage.</li><li>Successfully dodging an attack. (Taking no damage from the attack due to armour doesn't count.) This also decreases your opponent's advantage. If you dodged a full attack</li></ul>(described below), your opponent's advantage drops to its lowest possible level.<br />
+<ul><li>Declaring a full attack, which boosts you to the highest level at the expense of being able to dodge for the round. (NOT DEFINED LIKE D&amp;D's FULL ATTACK)</li><li>Moving to a different attack position (ie different threatening square).</li><li>Stepping away from the enemy. This has two effects:<ol><li>if you're at a negative advantage (and are therefore doing some &quot;Surface&quot; damage), you are reset to &quot;Light&quot;</li><li>if your opponent has an advantage against you that is higher than &quot;Light&quot;, his advantage is dropped back to &quot;Light&quot;</li></ol></li></ul><br />
+The last method can be countered if the enemy follows, but the enemy can only follow if no one gets in his way and he has ticks left in the round.<br />
+<br />
+<br />
+TRACKING YOUR ADVANTAGE LEVEL: This is done simply enough with beads or dice, like in Magic.<br />
+<br />
+Note that these rules are not written in stone. The DM can grant or take away advantage whenever the situation calls for it. (e.g. Unexpectedly kissing an opponent during a close scene would definitely throw most fighters off their game, briefly!) The limits on a character's advantage levels ARE set in stone. A two-handed greatsword can't do better than 4 Critical, or worse than 4 Surface (unless the attacker misses entirely).<br />
+<br />
+This combat advantage method works in combats with more than two opponents. If a PC is facing off against 3 goblins, he has to work much harder at maintaining combat advantage. He'll most likely want to divide his efforts between all three goblins, because if he concentrates only on one, the other two will rapidly gain highest advantage and start dealing him Critical damage.<br />
+<br />
+FLATFOOTED: Attacking someone who is flatfooted automatically puts you at the maximum combat advantage you can achieve. This lasts as long as you can maintain the advantage.<br />
+<br />
+<br />
+Yup, finally done,<br />
+Dan.
+    </div>
+  </body>
+</html>

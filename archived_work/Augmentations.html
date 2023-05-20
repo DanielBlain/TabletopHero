@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>normalProject - Augmentations</title>
+    <link rel="stylesheet" href="static/style.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  </head>
+  <body>
+    <div class="wiki" id="content_view" style="display: block;">
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">AUGMENTATIONS</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">Each skill will have a primary attribute it is tied to. This means the skill is placed under that tree. In most circumstances the bonus which the skill recieves will be from the attribute bonus in that tree. The skill might be 'augmented' with different attributes though. Int can help in climbing, STR can sometimes help in 'ride' (instead of dex).</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">problems: what is to stop people from stacking all of the bonuses they can?</span><br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">answer: make it so that only one of the attribute bonuses stacks for that skill. this means that if a mage (main attr is INT) decides he needs to climb a cliff, he will first think about the climb he will make, then go climb it. instead of using his str bonus (which will be smaller than his INT one) he will use his INT bonus, allowing him to have a slightly better chance to climb the cliff. His str isnt as high, but he makes up for it in climbing smarter.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">In this case the mage gains no other help from putting ranks into his climb (no help for his main stuff), but he can still use the skills for his main stuff to help the ones he may not be paying as much attention to.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">Each skill now needs to have AUG tags for it, showing what other skills can augment it.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">augs are kinda like synergies in dnd. if you have certain ranks in one skill, you get a bonus to other skills. augs recognise that skills are not separate, and are wider spread than just the attribute they are attributed to. </span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">two ways of doing it: </span><br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">1. each aug possible adds together</span><br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">2. the highest aug possible in any given situation is used.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">1: pro: makes starting skill checks easier. allows for more 'synergy' between skill trees - a person could plan around these, and put skills into the trees that give him good synergies and also have the skills he wants.</span><br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">1: con: it is easy to abuse, causing higher checks - and the 'reason' behind augs to be lost. the reason is the knowledge that if you are better in some areas, it will help you somewhat in other areas.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">2: pro: this allows more moderate skill checks, and less abuse of &quot;higher numbers&quot;</span><br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">2: con: less of a &quot;synergistic&quot; feel to it, and will also cause people to possibly try to justify using something in a situation where it is not relevant (though i guesss if we screen the aug list carefully first, this will not be a problem...</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">The more you swim, the stronger you get. </span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">It could also be said that the more you swim the smarter you get at the same time from swiming.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">Those two statements lead to suggest that adding up the total bonus' makes the most sense, since you will train swimming only to not be able to use the points to their full effect. In essence you will be ignoring your skill in a particular area (in this case your STR which is the main stat used in swimming) for just higher bonus.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">Okay, ive convinced myself. Thinking along that line of reasoning, it is better to have augs stack than it is to have them replace each other.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">__</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">ATTRIBUTE CHECKS: These happen when there is no particular skill to cover something a player needs to do. For instance:</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">A player would like to memorise a manuscript. THey have a high intelligence, but there is no skill called 'memory'. This means that the base intelligence of the person should be taken as the skill check. Because of the fact that we have made skill numbers that have corresponding difficulties to them, this will not be able to be used for the attribute check (they will be too high, since the bonus to any one skill is lower than the average amount of skillpoints in a given skill. so while the player might have high intelligence skills, they will not therefore have a high enough bonus to do what they want. If somebody had to train in every skill in a tree to gain normal benefits, this would not be good.)</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">For these reasons we want to have a way to calculate fairly how a person can do a check that does not involve an untrained skill</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;"><strong>*skills must not be too broad in their covering, or too narrow either. too broad and you dont have a full enough tree. too narrow and you have much too many skills to conceiveably keep up with - micromanaging gets boring, fast</strong>*</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">Attribute check list:</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">1. is there trained skill(s) the player has that can accomodate the check?</span><br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">2. is there an untrained skill(s) to do it?</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">If each of these is no, then the action will be determined by an attribute check.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">An attribute check will work as such:</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">(the math behind it, which will NOT be on character sheets).</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">If a skill tree has 10 possible skills, and every 2 skill points gives 1 attribute point.</span><br />
+<br />
+<span style="font-family: Arial,sans-serif; font-size: 10pt;">(ATT *2)/10 ---- this goes down to ATT/5</span>
+    </div>
+  </body>
+</html>
