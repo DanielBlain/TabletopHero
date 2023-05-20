@@ -1,0 +1,100 @@
+<html>
+<head>
+  <title>Tabletop Hero Project Glossary</title>
+  <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <!--[if lte IE 8]><script src='assets/js/ie/html5shiv.js'></script><![endif]-->
+  <link rel='stylesheet' type='text/css' href='./assets/css/tabletophero.css' />
+  <!--[if lte IE 8]><link rel='stylesheet' href='assets/css/ie8.css' /><![endif]-->
+</head>
+<body>
+  <div id='glossary'>
+    <div>
+      <h1><span id='glossary-headcard'>Tabletop Hero Project Project</span></h1>
+    </div>
+    <div class='glossary-headcard'>
+      <a class='wiki_link' href='/index.html'>&lt;Main</a>
+      <p>
+        Please note that many of the Glossary.html entries are ripped from or at
+        least inspired by the entries from
+        <a class='project_link_ext' href='http://indie-rpgs.com/articles/glossary.html'>
+          &quot;The Provisional Glossary.html&quot;
+        </a>
+        by Ron Edwards, at
+        <a class='wiki_link_ext' href='http://www.indie-rpgs.com/'>
+          The Forge
+        </a>
+        .
+      </p>
+      <p>
+        Entries that are direct quotes of the entries given on The Forge are
+        <span class='glossary-borrowed'>indicated by a special font-face</span>
+        .
+      </p>
+      <p>
+        In some cases, definitions include lingo that isn't defined in this
+        Glossary.html. I decided not to keep such lingo since it starts to lead
+        outside of what I'm interested in for our game. Furthermore, Mr. Edward's
+        Glossary was written from a perspective recognizing only three Creative
+        Agendas, while Mr. Bartle's models recognize up to eight player types. These
+        classification systems are not necessarily incompatible, but come at the
+        subject angle from different angles. See
+        <a class='wiki_link' href='/Theory Development.html'>
+          &quot;Theory Development&quot;
+        </a>
+        and
+        <a class='wiki_link' href='/Current Work.html'>
+          &quot;Current Work&quot;
+        </a>
+        for more information.
+      </p>
+      <p>
+        Also see
+        <a class='wiki_link_ext' href='http://www.costik.com/nowords2002.pdf'>
+          &quot;I Have No Words &amp; I Must Design: Toward a Critical Vocabulary
+          for Games&quot;
+        </a>
+        by Greg Costikyan.
+      </p>
+    </div> <!-- glossary-headcard -->
+
+    <ul class='glossary-list'>
+      <li class='glossary-entry' v-for='entry in entries'>
+        <div v-bind:id='entry.id' class='glossary-term'>
+          {{entry.name}}
+        </div>
+        <div class='glossary-defn' v-html="entry.description">
+        </div>
+      </li> <!-- glossary-entry -->
+    </ul><!-- glossary-list -->
+
+    <ul class='glossary-reference-list'>
+      <li class='glossary-reference'>
+        <a id='ref1' class='wiki_link_ext' href=''>
+          [Csikszentmihalyi90]
+        </a>
+        Csikszentmihalyi , Mihaly, Flow: The Psychology of Optimal Experience,
+        Harper &amp; Row, 1990.
+      </li>
+      <li class='glossary-reference'>
+        <a id='ref2' class='wiki_link_ext' href='http://www.ascusc.org/jcmc/vol3/issue2/lombard.html'>
+          [Lombard97]
+        </a>
+        Lombard, Matthew, Ditton, Theresa, “At the Heart of it All: The Concept of
+        Presence”, Journal of Computer-Mediated Communication vol. 3, July 5, 2004.
+      </li>
+      <li class='glossary-reference'>
+        <a id='ref3' class='wiki_link_ext' href=''>
+          &quot;The Art of Dramatic Writing&quot;
+        </a>
+        Lajos Egri, 1946
+      </li>
+    </ul><!-- glossary-reference-list -->
+
+  </div><!-- glossary -->
+
+  <script src='./assets/js/vue.js'></script>
+  <script src='./assets/js/data-glossary.js'></script>
+
+</body>
+</html>
